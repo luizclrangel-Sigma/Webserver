@@ -1,1 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <title>Controle IO - IoT</title>
+
+    <!-- Ícones Google -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+</head>
+<body>
+
+    <div class="app-container">
+        <h1 class="title">Controle IO</h1>
+
+        <div class="io-card" id="io1_card">
+            <span class="material-icons io-icon">power_settings_new</span>
+            <span class="io-title">IO 1</span>
+            <button class="io-btn" id="btn_io1">Carregando...</button>
+        </div>
+
+        <div class="io-card" id="io2_card">
+            <span class="material-icons io-icon">power_settings_new</span>
+            <span class="io-title">IO 2</span>
+            <button class="io-btn" id="btn_io2">Carregando...</button>
+        </div>
+
+        <div class="io-card" id="io3_card">
+            <span class="material-icons io-icon">power_settings_new</span>
+            <span class="io-title">IO 3</span>
+            <button class="io-btn" id="btn_io3">Carregando...</button>
+        </div>
+
+        <div class="io-card" id="io4_card">
+            <span class="material-icons io-icon">power_settings_new</span>
+            <span class="io-title">IO 4</span>
+            <button class="io-btn" id="btn_io4">Carregando...</button>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
