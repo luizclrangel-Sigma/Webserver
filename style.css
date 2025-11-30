@@ -1,1 +1,85 @@
+body {
+    margin: 0;
+    background: #121212;
+    color: #ffffff;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.app-container {
+    width: 90%;
+    max-width: 420px;
+    margin: auto;
+    margin-top: 30px;
+    animation: fadeIn 0.8s ease;
+}
+
+.title {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 25px;
+}
+
+.io-card {
+    background: #1d1d1d;
+    padding: 20px;
+    border-radius: 14px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 0px 10px #00000055;
+    animation: fadeInUp 0.6s ease;
+}
+
+.io-icon {
+    font-size: 32px;
+    color: #00e5ff;
+}
+
+.io-title {
+    flex: 1;
+    margin-left: 14px;
+    font-size: 20px;
+}
+
+.io-btn {
+    background: #333;
+    border: none;
+    padding: 12px 20px;
+    color: #ffffff;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.io-btn:active {
+    transform: scale(0.97);
+}
+
+/* Estado ligado */
+.io-on {
+    background: #00c853 !important;
+}
+
+/* Estado desligado */
+.io-off {
+    background: #d50000 !important;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
